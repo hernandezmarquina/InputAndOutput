@@ -28,6 +28,11 @@ export class ListPage {
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad ListPage');
+
+    // Default values
+    for (let index = 0; index < 10; index++) {
+      this.items.push("Your item here");
+    }
   }
 
   myMenuButtonPressed(action: Action) {
