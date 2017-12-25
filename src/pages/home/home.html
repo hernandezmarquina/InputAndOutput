@@ -1,14 +1,16 @@
 <ion-header>
   <ion-navbar>
     <ion-title>
-      Ionic Blank
+      Page 1
     </ion-title>
   </ion-navbar>
 </ion-header>
 
-<ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
+<ion-content id="content">
+  <!-- This is our custom component -->
+  <MyMenu (button-pressed)="myMenuButtonPressed($event)"></MyMenu>
+  <div style="margin-top:50%; text-align:center;">
+    <p>Message:</p>
+    <p>{{message}}</p>
+  </div>
 </ion-content>
